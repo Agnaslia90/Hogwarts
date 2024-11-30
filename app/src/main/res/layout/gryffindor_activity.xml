@@ -52,6 +52,7 @@
         android:layout_marginStart="16dp"
         android:padding="10dp"
         android:textColor="@color/white"
+        android:textAllCaps="false"
         android:backgroundTint="@color/griffindor"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
