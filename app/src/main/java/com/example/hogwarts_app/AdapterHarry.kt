@@ -23,7 +23,7 @@ class AdapterHarry(private val filmsList: List<String>, private val context: Con
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.items_layout, parent, false)
-        return ViewHolder(view, context)
+        return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -37,7 +37,8 @@ class AdapterHarry(private val filmsList: List<String>, private val context: Con
         return filmsList.size
     }
 
-    class ViewHolder(itemView: View, private val context: Context) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View) :
+        RecyclerView.ViewHolder(itemView) {
         val textView: TextView = itemView.findViewById(R.id.textView)
         val cardView: CardView = itemView.findViewById(R.id.cardView)
 
@@ -45,27 +46,14 @@ class AdapterHarry(private val filmsList: List<String>, private val context: Con
             textView.text = house
 
             cardView.setOnClickListener {
-                when (position) {
-                    0 -> {
-                        val intent1 = Intent(context, Gryffindor::class.java)
-                        context.startActivity(intent1)
-                    }
-
-                    1 -> {
-                        val intent1 = Intent(context, Hufflepuff::class.java)
-                        context.startActivity(intent1)
-                    }
-
-                    2 -> {
-                        val intent2 = Intent(context, Ravenclaw::class.java)
-                        context.startActivity(intent2)
-                    }
-
-                    3 -> {
-                        val intent3 = Intent(context, Slytherin::class.java)
-                        context.startActivity(intent3)
-                    }
+                val intent = when (position) {
+                    0 -> Intent(itemView.context, Gryffindor::class.java)
+                    1 -> Intent(itemView.context, Hufflepuff::class.java)
+                    2 -> Intent(itemView.context, Ravenclaw::class.java)
+                    3 -> Intent(itemView.context, Slytherin::class.java)
+                    else -> null
                 }
+                intent?.let { itemView.context.startActivity(it) }
             }
         }
     }
