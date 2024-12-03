@@ -1,4 +1,50 @@
 <resources>
     <string name="app_name">Hogwarts_App</string>
     <string name="hogwarts">Hogwarts</string>
+    <string name="btnBack">Back</string>
+    <string name="hat">Sorting Hat</string>
+    <string name="gryffindorDescription">
+        Gryffindor is one of the four houses at Hogwarts School of Witchcraft and Wizardry in the Harry Potter universe.
+        It was founded by Godric Gryffindor, who highly valued bravery, courage, and determination.
+        Gryffindor students are known for being daring, bold, and often natural leaders.
+
+        The house primary color is red, and its emblematic animal is the lion.
+        Gryffindor crest features a lion rampant on a red and gold background.
+
+        Some of the most famous characters from Gryffindor include Harry Potter, Hermione Granger, Ron Weasley, and Albus Dumbledore.
+        The house has its own common room, located in a tower at Hogwarts, and its motto is "Courage and bravery."
+    </string>
+    <string name="hufflepuffDescription">
+        Hufflepuff is one of the four houses at Hogwarts School of Witchcraft and Wizardry in the Harry Potter universe.
+        It was founded by Helga Hufflepuff, who valued hard work, patience, loyalty, and fair play.
+        Hufflepuff students are known for being kind, just, and always willing to help others.
+
+        The house primary color is yellow, and its emblematic animal is the badger.
+        Hufflepuff crest features a badger on a yellow and black background.
+
+        Some of the most famous characters from Hufflepuff include Cedric Diggory and Nymphadora Tonks.
+        The house has its own common room, located near the kitchens, and its motto is "Hard work and loyalty."
+    </string>
+    <string name="ravenclawDescription">
+        Ravenclaw is one of the four houses at Hogwarts School of Witchcraft and Wizardry in the Harry Potter universe.
+        It was founded by Rowena Ravenclaw, who highly valued intelligence, wisdom, and creativity.
+        Ravenclaw students are known for being clever, independent, and often academic achievers.
+
+        The house primary color is blue, and its emblematic animal is the eagle.
+        Raven claw crest features an eagle on a blue and silver background.
+
+        Some of the most famous characters from Ravenclaw include Luna Lovegood and Cho Chang.
+        The house has its own common room, located at the top of a tower, and its motto is "Wisdom and creativity."
+    </string>
+    <string name="slytherinDescription">
+        Slytherin is one of the four houses at Hogwarts School of Witchcraft and Wizardry in the Harry Potter universe.
+        It was founded by Salazar Slytherin, who valued ambition, cunning, resourcefulness, and determination.
+        Slytherin students are known for being ambitious, clever, and often driven to succeed at any cost.
+
+        The house primary color is green, and its emblematic animal is the serpent.
+        Slytherin crest features a serpent on a green and silver background.
+
+        Some of the most famous characters from Slytherin include Severus Snape, Draco Malfoy, and Tom Riddle (Lord Voldemort).
+        The house has its own common room, located in the dungeons, and its motto is "Ambition and cunning."
+    </string>
 </resources>
