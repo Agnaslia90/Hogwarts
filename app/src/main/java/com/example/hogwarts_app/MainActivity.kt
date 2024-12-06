@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = AdapterHarry(filmsHP, this)
 
-        val btnHouses: Button = findViewById(R.id.selectHouseBtn)
+        val btnHouses: ImageView = findViewById(R.id.selectHouseBtn)
         val selectedHouse: TextView = findViewById(R.id.textViewSelected)
 
         btnHouses.setOnClickListener{
