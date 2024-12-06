@@ -8,6 +8,12 @@
     android:background="#112A4A"
     tools:context=".MainActivity">
 
+    <android.widget.ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
     <LinearLayout
         android:id="@+id/LinearLayoutContainer"
         android:layout_width="match_parent"
@@ -33,11 +39,9 @@
             android:layout_height="match_parent"
             android:scrollbars="vertical" />
 
-    </LinearLayout>
-
     <ImageView
         android:id="@+id/selectHouseBtn"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="180dp"
         android:src="@drawable/sorting_hat"
         android:text="@string/hat"
@@ -67,4 +71,6 @@
         style="bold"
         android:padding="16dp"/>
 
+    </LinearLayout>
+    </android.widget.ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
